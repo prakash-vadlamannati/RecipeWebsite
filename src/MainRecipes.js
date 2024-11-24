@@ -17,7 +17,7 @@ function Recipe() {
     if (query) {
       searchRecipes();
     }
-  }, [query, currentPage]);
+  }, [query, currentPage,searchRecipes]);
 
   const searchRecipes = async () => {
     setIsLoading(true);
