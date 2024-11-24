@@ -1,0 +1,99 @@
+/* Ensure the background color covers the full page */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(109, 118, 92); /* or any color you prefer */
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container should take full height */
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(109, 118, 92);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1; /* Allow the recipes section to grow and take available space */
+}
+
+/* Recipe card styling */
+.recipe-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.recipe-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.recipe-card p {
+  font-size: 14px;
+}
+
+/* Search bar styling */
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Pagination styling */
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 5px;
+}
+
+.page-item .page-link {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.page-item.active .page-link {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #007bff;
+}
